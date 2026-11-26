@@ -1,0 +1,56 @@
+<!-- Collez le CSS dans <style> et le bloc avant <footer>. Adaptez les couleurs (variables --ink, --paper-raised, --line, --amber, --amber-soft) à chaque site. -->
+<style>
+  .oz-apps { padding: 8px 0 24px; }
+  .oz-apps h2 { font-family:'Fraunces',Georgia,serif; font-size:24px; font-weight:600; margin-bottom:6px; }
+  .oz-apps .lead { color: var(--ink-soft); font-size:15px; margin-bottom:20px; }
+  .oz-apps .apps { display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:14px; }
+  .oz-apps a.app {
+    display:block; text-decoration:none; color: var(--ink);
+    background: var(--paper-raised); border:1px solid var(--line); border-radius:8px; padding:18px 20px;
+    transition: border-color 0.15s;
+  }
+  .oz-apps a.app:hover { border-color: var(--amber); }
+  .oz-apps a.app strong { display:block; font-family:'Fraunces',Georgia,serif; font-size:17px; margin-bottom:6px; }
+  .oz-apps a.app span { color: var(--ink-soft); font-size:14px; line-height:1.5; }
+  .oz-apps a.app { display:flex; gap:14px; align-items:flex-start; }
+  .oz-apps a.app img.ico { width:52px; height:52px; border-radius:12px; flex:none; object-fit:cover; background: var(--line); }
+  .oz-apps a.app .txt { min-width:0; }
+  .oz-apps a.app.here { border-color: var(--amber); background: var(--amber-soft); }
+</style>
+<section class="oz-apps">
+  <div class="wrap">
+    <h2>Les applications Oz-Vitrine</h2>
+    <p class="lead">Des applications Android simples et utiles, conçues à Paris par Christophe VIDAL.</p>
+    <div class="apps">
+      <a class="app" href="https://ozvitrine.github.io/oz_podcast/" target="_blank" rel="noopener">
+        <img class="ico" src="https://ozvitrine.github.io/oz_carte2visite/icons/oz_podcast.png" alt="" width="52" height="52" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div class="txt">
+          <strong>Oz Podcast</strong>
+          <span>Vos podcasts et vos radios, rangés en classeurs, écoute hors ligne et file « À suivre ».</span>
+        </div>
+      </a>
+      <a class="app here" href="index.html">
+        <img class="ico" src="https://ozvitrine.github.io/oz_carte2visite/icons/oz_carte2visite.png" alt="" width="52" height="52" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div class="txt">
+          <strong>Oz Carte2Visite</strong>
+          <span>Vos cartes de visite, d'abonnement et de fidélité, toujours dans votre poche.</span>
+        </div>
+      </a>
+      <a class="app" href="https://ozvitrine.github.io/oz_podcast/" target="_blank" rel="noopener">
+        <img class="ico" src="https://ozvitrine.github.io/oz_carte2visite/icons/oz_filigrane.png" alt="" width="52" height="52" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div class="txt">
+          <strong>Oz Filigrane</strong>
+          <span>Filigranez vos documents avant de les envoyer, pour qu'ils ne servent qu'à l'usage prévu.</span>
+        </div>
+      </a>
+      <a class="app" href="https://ozvitrine.github.io/oz_podcast/" target="_blank" rel="noopener">
+        <img class="ico" src="https://ozvitrine.github.io/oz_carte2visite/icons/oz_alerte.png" alt="" width="52" height="52" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div class="txt">
+          <strong>Oz Alerte</strong>
+          <span>Un bouton d'alerte pour prévenir un proche en cas de chute ou de danger, avec votre position et votre batterie.</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
